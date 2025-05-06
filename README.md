@@ -59,3 +59,121 @@ A containerization platform that ensures consistent development, testing, and de
 **CI/CD Pipelines**
 
 Automated workflows that streamline the process of testing, integrating, and deploying new code updates quickly and reliably.
+
+## **Database Design**
+
+This section outlines the core entities in the database and how they relate to one another. These models support the main features of the platform, such as property listings, bookings, user interactions, and payment processing.
+
+**1. Users**
+
+Represents individuals using the platform, either as hosts or guests.
+
+Key Fields:
+
+    id: Unique identifier for each user.
+
+    username: User’s chosen display name.
+
+    email: User’s email address (used for login and communication).
+
+    password: Hashed password for authentication.
+
+    role: Indicates whether the user is a guest, host, or admin.
+
+Relationships:
+
+    A user can list multiple properties.
+
+    A user can make multiple bookings.
+
+    A user can leave multiple reviews.
+
+**2. Properties**
+
+Represents real estate listings created by users.
+
+Key Fields:
+
+    id: Unique identifier for the property.
+
+    title: Name or title of the property.
+
+    location: Geographic location/address of the property.
+
+    price_per_night: Cost to rent the property per night.
+
+    host_id: Foreign key linking to the user who listed the property.
+
+Relationships:
+
+    A property belongs to one host (user).
+
+    A property can have multiple bookings.
+
+    A property can receive multiple reviews.
+
+**3. Bookings**
+
+Represents a reservation made by a user to stay at a property.
+
+Key Fields:
+
+    id: Unique identifier for the booking.
+
+    user_id: Foreign key linking to the guest who made the booking.
+
+    property_id: Foreign key linking to the booked property.
+
+    check_in: Date of arrival.
+
+    check_out: Date of departure.
+
+Relationships:
+
+    A booking is linked to one user and one property.
+
+    Each booking may be associated with a payment.
+
+**4. Payments**
+
+Captures financial transactions for bookings.
+
+Key Fields:
+
+    id: Unique identifier for the payment.
+
+    booking_id: Foreign key linking to the associated booking.
+
+    amount: Total amount paid.
+
+    payment_status: Status (e.g., pending, completed, failed).
+
+    payment_date: Date and time of the transaction.
+
+Relationships:
+
+    A payment is tied to one booking.
+
+    Each booking can have one or more payment attempts.
+
+**5. Reviews**
+
+Allows users to leave feedback on properties.
+
+Key Fields:
+
+    id: Unique identifier for the review.
+
+    user_id: Foreign key linking to the reviewer.
+
+    property_id: Foreign key linking to the reviewed property.
+
+    rating: Numerical score (e.g., 1–5).
+
+    comment: Written feedback provided by the user.
+
+Relationships:
+
+    A review is linked to one user and one property.
+
+    A property can have many reviews from different users.
