@@ -1,9 +1,9 @@
 # airbnb-clone-project
-**# Objective**
+**Objective**
 
 The backend of the Airbnb Clone project is built to deliver a reliable and scalable system for handling user interactions, property listings, bookings, and payments. It aims to replicate the essential functionalities of Airbnb, ensuring a seamless experience for both users and hosts.
 
-**# Team Roles**
+** Team Roles**
 
 **Backend Developer**
 
@@ -21,7 +21,9 @@ Manages the deployment pipeline, infrastructure automation, and continuous integ
 
 Conducts comprehensive testing to verify that backend functionalities work as expected and meet established quality standards. This includes writing and executing unit, integration, and regression tests. The QA Engineer also documents bugs, collaborates with developers to resolve issues, and helps maintain a stable and reliable product.
 
-**# Technology Stack**
+## **Technology Stack**
+
+
 Django: A robust, high-level Python web framework used to develop the core backend and expose RESTful APIs efficiently.
 
 Django REST Framework (DRF): An extension of Django that simplifies the process of building, testing, and managing RESTful APIs with powerful serialization and authentication tools.
