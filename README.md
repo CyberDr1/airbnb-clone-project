@@ -224,3 +224,69 @@ Relationships:
     Indexing: Frequently queried fields are indexed to enhance search performance and reduce query time.
 
     Caching: Implements caching mechanisms to lower database load and improve response time across key endpoints.
+
+    ## **API Security**
+
+    Ensuring the security of the API is a top priority to protect user data, maintain system integrity, and prevent unauthorized access. The following key security measures are implemented in the project:
+
+
+**1. Authentication**
+
+    Implementation: Token-based authentication using JSON Web Tokens (JWT) to verify user identity for each request.
+
+    Why It Matters: Prevents unauthorized access to protected endpoints and ensures that only authenticated users can interact with the system.
+
+**2. Authorization**
+
+    Implementation: Role-based access control (RBAC) to determine what actions a user can perform based on their role (e.g., guest, host, admin).
+
+    Why It Matters: Ensures that users can only access resources they are permitted to, such as preventing guests from modifying properties they don't own.
+
+**3. Rate Limiting**
+
+    Implementation: Limits the number of requests a user or IP can make within a specified time window.
+
+    Why It Matters: Protects the API from abuse, brute-force attacks, and denial-of-service (DoS) attempts by slowing down or blocking excessive traffic.
+
+**4. Data Encryption**
+
+    Implementation: HTTPS is enforced for all API communication, and sensitive data (like passwords) is hashed before storage.
+
+    Why It Matters: Protects data in transit and at rest, ensuring that critical information such as passwords and payment data cannot be intercepted or compromised.
+
+**5. Input Validation & Sanitization**
+
+    Implementation: All incoming data is validated and sanitized using serializers and custom validators.
+
+    Why It Matters: Prevents injection attacks, such as SQL injection or XSS (Cross-site Scripting), by ensuring that only safe, expected data is processed by the backend.
+
+**6. Secure Payment Handling**
+
+    Implementation: Payment information is processed through a secure third-party payment gateway (e.g., Stripe or PayPal).
+
+    Why It Matters: Avoids direct handling of sensitive financial data within the app, reducing liability and improving PCI compliance.
+
+
+    ## **CI/CD Pipeline**
+
+Continuous Integration and Continuous Deployment (CI/CD) pipelines are automated workflows that streamline the process of building, testing, and deploying code. These pipelines ensure that changes to the codebase are automatically validated and safely delivered to production without manual intervention.
+
+**Why CI/CD Is Important**
+
+    Improved Code Quality: Automated testing catches bugs and issues early in the development cycle.
+
+    Faster Deployment: Reduces the time it takes to deliver new features or fixes to users.
+
+    Consistency: Ensures that all environments (development, staging, production) are updated in a reliable and repeatable way.
+
+    Developer Efficiency: Automates repetitive tasks like testing, building, and deployment, allowing developers to focus on writing code.
+
+**Tools Used**
+
+    GitHub Actions: For automating CI workflows such as running tests, linting code, and deploying builds on push or pull requests.
+
+    Docker: Used to containerize the application, ensuring consistent environments across development and deployment.
+
+    Docker Compose: Manages multi-container applications during local development and testing.
+
+    Optional: Integration with platforms like Heroku, AWS, or DigitalOcean for automated deployments to staging or production environments.
