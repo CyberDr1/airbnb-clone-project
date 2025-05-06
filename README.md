@@ -48,7 +48,7 @@ A flexible query language that enables clients to request exactly the data they 
 
 A distributed task queue system used for executing time-consuming or scheduled tasks asynchronously, such as email notifications or payment processing.
 
-Redis
+**Redis**
 
 An in-memory data store used for caching, message brokering, and managing sessions to boost application performance.
 
@@ -177,3 +177,50 @@ Relationships:
     A review is linked to one user and one property.
 
     A property can have many reviews from different users.
+
+## **Features Breakdown**
+
+
+**1. API Documentation**
+
+    OpenAPI Standard: All backend APIs follow the OpenAPI specification, promoting clear documentation and easy integration for developers.
+
+    Django REST Framework: Delivers a fully-featured RESTful API to perform CRUD operations on user and property data.
+
+    GraphQL: Enables efficient and flexible data querying, allowing clients to request only the data they need.
+
+**2. User Authentication**
+
+    Endpoints: /users/, /users/{user_id}/
+
+    Key Features: Supports user registration, login authentication, and profile management functionalities.
+
+**3. Property Management**
+
+    Endpoints: /properties/, /properties/{property_id}/
+
+    Key Features: Allows users to create, view, update, and delete property listings.
+
+**4. Booking System**
+
+    Endpoints: /bookings/, /bookings/{booking_id}/
+
+    Key Features: Users can make new bookings, modify existing ones, and manage check-in/check-out information.
+
+**5. Payment Processing**
+
+    Endpoints: /payments/
+
+    Key Features: Manages secure transactions related to property bookings, ensuring a smooth payment workflow.
+
+**6. Review System**
+
+    Endpoints: /reviews/, /reviews/{review_id}/
+
+    Key Features: Enables users to submit, update, and manage reviews for listed properties.
+
+**7. Database Optimizations**
+
+    Indexing: Frequently queried fields are indexed to enhance search performance and reduce query time.
+
+    Caching: Implements caching mechanisms to lower database load and improve response time across key endpoints.
