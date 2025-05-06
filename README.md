@@ -267,7 +267,7 @@ Relationships:
     Why It Matters: Avoids direct handling of sensitive financial data within the app, reducing liability and improving PCI compliance.
 
 
-    ## **CI/CD Pipeline**
+## **CI-CD Pipeline**
 
 Continuous Integration and Continuous Deployment (CI/CD) pipelines are automated workflows that streamline the process of building, testing, and deploying code. These pipelines ensure that changes to the codebase are automatically validated and safely delivered to production without manual intervention.
 
