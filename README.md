@@ -20,3 +20,21 @@ Manages the deployment pipeline, infrastructure automation, and continuous integ
 **QA Engineer**
 
 Conducts comprehensive testing to verify that backend functionalities work as expected and meet established quality standards. This includes writing and executing unit, integration, and regression tests. The QA Engineer also documents bugs, collaborates with developers to resolve issues, and helps maintain a stable and reliable product.
+
+**# Technology Stack**
+
+   ** Django:** A robust, high-level Python web framework used to develop the core backend and expose RESTful APIs efficiently.
+
+    **Django REST Framework (DRF):** An extension of Django that simplifies the process of building, testing, and managing RESTful APIs with powerful serialization and authentication tools.
+
+   ** PostgreSQL:** A reliable and scalable relational database system used to store and manage structured application data.
+
+   ** GraphQL:** A flexible query language that enables clients to request exactly the data they need, improving performance and reducing over-fetching.
+
+   ** Celery:** A distributed task queue system used for executing time-consuming or scheduled tasks asynchronously, such as email notifications or payment processing.
+
+    **Redis:** An in-memory data store used for caching, message brokering, and managing sessions to boost application performance.
+
+    **Docker:** A containerization platform that ensures consistent development, testing, and deployment environments across all stages of the project.
+
+   ** CI/CD Pipelines:** Automated workflows that streamline the process of testing, integrating, and deploying new code updates quickly and reliably.
