@@ -271,6 +271,7 @@ Relationships:
 
 Continuous Integration and Continuous Deployment (CI/CD) pipelines are automated workflows that streamline the process of building, testing, and deploying code. These pipelines ensure that changes to the codebase are automatically validated and safely delivered to production without manual intervention.
 
+
 **Why CI/CD Is Important**
 
     Improved Code Quality: Automated testing catches bugs and issues early in the development cycle.
