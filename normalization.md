@@ -59,4 +59,4 @@ Move `owner_email` to the `User` table (where `owner_id` belongs).
 The schema has been adjusted to comply with **3NF**, ensuring:
 - Data integrity
 - Minimal redundancy
-- Easier maintenance
+- Easier maintenance.
