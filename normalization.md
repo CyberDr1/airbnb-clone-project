@@ -1,4 +1,4 @@
-# Database Normalization – Airbnb Clone
+## # Database Normalization – Airbnb Clone
 
 ## Objective:
 Apply normalization principles to ensure the database is in **Third Normal Form (3NF)**.
